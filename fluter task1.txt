@@ -1,0 +1,293 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key}) : super(key: Key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: Text('my contaacts'),
+        ), //appbar
+        body: Center(
+          child: Column(
+            children: [
+              Container(
+                width: 800.0,
+                height: 150.0,
+                margin: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(20.0),
+                ), //boxdicoration
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        radius: 40.0,
+                      ), //circleavatar
+                      title: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'name whatever',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.mail,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('doesnt-matter@haha.com'),
+                              ), //padding
+                            ],
+                          ), //row
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.phone,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('01613543543'),
+                              ), //padding
+                            ],
+                          ), //row1
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.mark_chat_unread,
+                                  )), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 5.0,
+                                  ),
+                                  child: Text('not boss')), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.delete_forever,
+                                  )), //padding
+                            ],
+                          ), //row2
+                        ], //children
+                      ), //coulmn
+                    ), //listtitle
+                  ],
+                ), //coulmn1
+              ), //container
+              Container(
+                width: 800.0,
+                height: 150.0,
+                margin: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(20.0),
+                ), //boxdicoration
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        radius: 40.0,
+                      ), //circleavatar
+                      title: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'whatever name',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.mail,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('haha@doesnt-matter.com'),
+                              ), //padding
+                            ],
+                          ), //row
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.phone,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('01613543543'),
+                              ), //padding
+                            ],
+                          ), //row1
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.mark_chat_unread,
+                                  )), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 5.0,
+                                  ),
+                                  child: Text('boss')), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.delete_forever,
+                                  )), //padding
+                            ],
+                          ), //row2
+                        ], //children
+                      ), //coulmn
+                    ), //listtitle
+                  ],
+                ), //coulmn1
+              ), //container
+              Container(
+                width: 800.0,
+                height: 150.0,
+                margin: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(20.0),
+                ), //boxdicoration
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        radius: 40.0,
+                      ), //circleavatar
+                      title: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'what name ever',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.mail,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('doesnt-haha@matter.com'),
+                              ), //padding
+                            ],
+                          ), //row
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.phone,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 5.0,
+                                ),
+                                child: Text('0161354543'),
+                              ), //padding
+                            ],
+                          ), //row1
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.mark_chat_unread,
+                                  )), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 5.0,
+                                  ),
+                                  child: Text('mayboss')), //padding
+                              Padding(
+                                  padding: EdgeInsets.only(
+                                    left: 7.0,
+                                  ),
+                                  child: Icon(
+                                    Icons.delete_forever,
+                                  )), //padding
+                            ],
+                          ), //row2
+                        ], //children
+                      ), //coulmn
+                    ), //listtitle
+                  ],
+                ), //coulmn1
+              ), //container
+            ],
+          ), //coulmn
+        ), //center
+      ), //scafold
+    ); //MataialApp
+  }
+}
